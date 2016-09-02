@@ -2,13 +2,13 @@ import sopel.module
 import markovgen
 
 losers = []
-file_ = open('Wiseau.txt')
+file_ = open('/home/adtran/texts/viqotd.txt')
 markov = markovgen.Markov(file_)
 
 @sopel.module.nickname_commands('pontificate')
 def pontificate(bot, trigger):
 	print "Generating sentence..."
-	bot.say(markov.generate_markov_text(10))
+	bot.say(markov.generate_markov_text(25))
 
 @sopel.module.nickname_commands('losers')
 def printLosers(bot, trigger):

@@ -11,7 +11,7 @@ class Markov(object):
 
 	def file_to_words(self):
 		self.open_file.seek(0)
-		data = self.open_file.read()
+		data = self.open_file.read().decode('utf-8', 'ignore')
 		words = data.split()
 		return words
 
