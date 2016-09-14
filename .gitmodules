@@ -1,0 +1,3 @@
+[submodule "talkBot/markov-text"]
+	path = talkBot/markov-text
+	url = https://github.com/codebox/markov-text
